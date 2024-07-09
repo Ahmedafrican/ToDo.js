@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="content">
+        <div class="heading">
+            <div class="form-heading">
+                <h1 class="text-danger">Add New Todo To Project</h1>
+                <button class="add-todo-btn">Add New ToDo</button>
+                <div class="form">
+                    <div class="add-todo-form">
+                        <form id="form-todo">
+                            <label for="title">Title:</label>
+                            <input type="text" id="title" name="title">
+                            <label for="description">Description:</label>
+                            <input type="text" id="description" name="description">
+                            <label for="DueDate">Due Date:</label>
+                            <input type="date" id="DueDate" name="DueDate">
+                            <label for="priority">Priority:</label>
+                            <select name="priority" id="priority">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>  
+                            </select>
+                            <label for="checkList">CheckList Items Added  (if any): </label>
+                            <ol class="todo-ul"></ol>
+                            <input type="text" id="addtochecklist" name="addtochecklist" placeholder="type checklist item here">
+                            <button class="add-to-checklist">add to checklist</button>
+                        </form>
+                        <div class="after-form">
+                            <button type="submit" class="submitbtn">Submit ToDo</button>
+                            <button type="reset" class="resetbtn">Reset Form</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="todo-heading">
+                <h1>"Current Tasks in Projects"</h1>
+            </div>
+        </div>
+        <div class="projects"></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
